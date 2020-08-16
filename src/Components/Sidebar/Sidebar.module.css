@@ -1,0 +1,13 @@
+.sidebar {
+    background-color: #f1f1f1e1;
+    border-radius: 12px;
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.header {
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+}

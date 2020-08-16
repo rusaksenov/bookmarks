@@ -1,0 +1,16 @@
+.bookmarks__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 240px;
+    height: 150px;
+    border-radius: 8px;
+    /* background-color: rgba(224, 224, 224, 0.541); */
+    padding: 10px;
+    text-align: center;
+    margin: 4px;
+    background-color: #EE0000;
+    color: #fff; 
+    font-size: 15px;
+    font-weight: 200;
+}
