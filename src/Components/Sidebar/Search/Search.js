@@ -1,10 +1,17 @@
 import React from 'react';
 import classes from './Search.module.css';
 
-const Search = () => {
+const Search = (props) => {
+    const icons = props.desingInterface.icons
+    const colors = props.desingInterface.colors
+
     return (
         <div className={classes.search}>
-            <input type="text" placeholder="Поиск" />
+            <img src={icons.search} alt="" />
+            <input type="text" placeholder="Поиск"
+                style={{
+                    background: `${colors.main}`,
+                }}/>
         </div>
     )
 }

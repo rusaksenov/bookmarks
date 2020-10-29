@@ -1,20 +1,38 @@
 .App {
-    height: 100vh;
-    width: 100vw;
+	height: 100vh;
+	width: 100vw;
 }
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .app-wrapper {
-    font-family: Arial, sans-serif;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background: url('./bg-1__home.jpg') center center no-repeat;
-    background-size: cover;
-    padding: 8px;
-    display: grid;
-    grid-template-columns: 300px 7fr;
+	font-family: Arial, sans-serif;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background: url('./bg-1__home.jpg') center center no-repeat;
+	background-size: cover;
+	/* padding: 8px; */
+	display: grid;
+	grid-template-columns: 300px 7fr;
+	box-sizing: border-box;
+}
+
+@media (min-width: 0px) and (max-width: 1000px) {
+	.app-wrapper {
+		grid-template-columns: 1fr;
+	}
+	.sidebar {
+		display: none;
+	}
+}
+.sidebar {
+	/* padding: 8px; */
+}
+
+.main {
+	overflow-y: auto;
+	padding-bottom: 2vh;
 }

@@ -4,14 +4,29 @@ import classes from './Bookmark.module.css';
 const Bookmark = (props) => {
 
     return (
-        <div className={`${classes.bookmarks__item}`} >
+        <a href={props.url} className={classes.bookmarks__item}
+            style={{
+                background: `${props.BGcolor}`,
+                color: `${props.textColor}`,
+                fontSize: `${props.sizes.fonts}`,
+                width: `${props.sizes.width}`,
+                height: `${props.sizes.height}`,
+                margin: `${props.sizes.margin}`,
+            }}
+        >
             <div className={classes.bookmarks__norm}>
-                <img src={props.icon} alt="" />
-                {/* <img src="../../../img/icons/youtube.svg" alt="" /> */}
+                <div className={classes.bookmarks__logo}
+                    style={{
+                        width: `${props.sizes.heightIcon}`,
+                        height: `${props.sizes.heightIcon}`
+                    }}
+                >
+                    <img src={props.icon} alt=""/>
+                </div>
                 <strong className={classes.bookmarks__title}>{props.title}</strong>
             </div>
             {/* <div className={classes.bookmarks__hover}></div> */}
-        </div>
+        </a>
     )
 }
 

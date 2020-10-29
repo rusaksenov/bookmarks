@@ -1,9 +1,11 @@
 import React from 'react';
 import classes from './Setting.module.css';
 
-const Setting = () => {
+const Setting = (props) => {
     return (
-        <div className={classes.bookmarks__item}>Setting</div>
+        <div className={classes.bookmarks__item}>
+            {/* <img src={props.icon} /> */}
+        </div>
     )
 }
 
